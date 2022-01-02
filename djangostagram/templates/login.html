@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block contents%}
+    {{msg}}
+    
+    <form method="POST" action="{% url 'user_login' %}">
+        {% csrf_token %}
+        <table>
+            {{fields}}
+        </table>
+        <input type="submit" value="OK" />
+    </form>
+    
+    
+{% endblock %}
