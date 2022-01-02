@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from user.views import index ,redirct
+from user.views import index ,redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",index,name="index"),
-    path("redirct", redirct)
+    path("redirect", redirect),
 ]
